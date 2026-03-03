@@ -55,10 +55,11 @@ body { font-family: var(--font); color: var(--dark); background: var(--white); l
 .nav-logo { flex-shrink: 0; }
 .nav-logo img { height: 36px; display: block; }
 .logo-text-fallback {
-  font-size: 1.4rem; font-weight: 900; color: var(--white);
-  letter-spacing: 0.05em;
+  font-size: 1.4rem; font-weight: 900; color: var(--white) !important;
+  letter-spacing: 0.05em; text-decoration: none;
 }
-.navbar.scrolled .logo-text-fallback { color: var(--green-dark); }
+.navbar.scrolled .logo-text-fallback { color: var(--green-dark) !important; }
+.nav-logo { text-decoration: none; }
 
 .nav-links { list-style: none; display: flex; gap: 28px; flex: 1; justify-content: center; }
 .nav-links a { text-decoration: none; font-weight: 600; font-size: 0.9rem; color: var(--white); transition: color 0.2s; }
@@ -67,9 +68,10 @@ body { font-family: var(--font); color: var(--dark); background: var(--white); l
 .navbar.scrolled .nav-links a:hover { color: var(--green); }
 
 .nav-social { display: flex; gap: 14px; align-items: center; flex-shrink: 0; }
-.nav-social a { color: var(--white); opacity: 0.85; transition: opacity 0.2s; display: flex; }
+.nav-social a { color: var(--white) !important; opacity: 0.85; transition: opacity 0.2s; display: flex; text-decoration: none; }
 .nav-social a:hover { opacity: 1; }
-.navbar.scrolled .nav-social a { color: var(--dark); }
+.navbar.scrolled .nav-social a { color: var(--dark) !important; }
+.nav-social svg { fill: currentColor; }
 
 .nav-toggle {
   display: none; background: none; border: none;
@@ -166,8 +168,9 @@ p { margin-bottom: 16px; font-size: 1.05rem; }
 .footer p { margin-bottom: 6px; font-size: 0.95rem; }
 .footer strong { color: var(--white); }
 .footer-social { display: flex; justify-content: center; gap: 16px; margin: 20px 0 8px; }
-.footer-social a { color: rgba(255,255,255,0.6); transition: color 0.2s; display: flex; }
-.footer-social a:hover { color: var(--white); }
+.footer-social a { color: rgba(255,255,255,0.6) !important; transition: color 0.2s; display: flex; text-decoration: none; }
+.footer-social a:hover { color: var(--white) !important; }
+.footer-social svg { fill: currentColor; }
 .footer-small { margin-top: 16px; font-size: 0.8rem; opacity: 0.6; }
 
 /* ---- MOBILE ---- */
