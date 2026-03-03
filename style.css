@@ -6,15 +6,15 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --green: #2d6a4f;
-  --green-dark: #1b4332;
-  --green-light: #52b788;
-  --accent: #95d5b2;
+  --green: #1a3a6b;
+  --green-dark: #0f2347;
+  --green-light: #4a7fd4;
+  --accent: #7eb8f7;
   --white: #ffffff;
-  --off-white: #f8f9f6;
+  --off-white: #f4f7fc;
   --dark: #1a1a1a;
   --gray: #4a4a4a;
-  --light-gray: #e8ede6;
+  --light-gray: #e0e8f5;
   --font: 'Inter', system-ui, sans-serif;
 }
 
