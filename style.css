@@ -53,8 +53,10 @@ body { font-family: var(--font); color: var(--dark); background: var(--white); l
 .navbar.scrolled .nav-links a { color: var(--dark); }
 .nav-links a:hover { color: var(--accent); }
 .navbar.scrolled .nav-links a:hover { color: var(--green); }
-.nav-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--white); line-height: 1; }
-.navbar.scrolled .nav-toggle { color: var(--dark); }
+.nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; flex-direction: column; gap: 5px; }
+.nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: all 0.3s; }
+.navbar.scrolled .nav-toggle span { background: var(--dark); }
+
 
 /* HERO */
 .hero {
@@ -140,9 +142,13 @@ p { margin-bottom: 16px; font-size: 1.05rem; }
   .nav-links { display: none; position: absolute; top: 68px; left: 0; right: 0; background: var(--white); flex-direction: column; gap: 0; box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
   .nav-links.open { display: flex; }
   .nav-links a { color: var(--dark) !important; padding: 16px 24px; border-bottom: 1px solid var(--light-gray); }
-  .nav-toggle { display: block; }
+  .nav-toggle { display: flex; }
   .hero { background-attachment: scroll; }
   .form-row { grid-template-columns: 1fr; }
   .youth-block { padding: 24px; }
   .schedule-card { min-width: 160px; padding: 20px 32px; }
 }
+
+.map-link { color: var(--green); font-weight: 600; text-decoration: none; font-size: 1rem; }
+.map-link:hover { text-decoration: underline; }
+.nav-logo img { height: 36px; display: block; }
