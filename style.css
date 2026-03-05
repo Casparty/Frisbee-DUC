@@ -15,7 +15,7 @@
   --dark: #1a1a1a;
   --gray: #4a4a4a;
   --light-gray: #e0e8f5;
-  --font: 'Inter', system-ui, sans-serif;
+  --font: system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 
 html { scroll-behavior: smooth; }
